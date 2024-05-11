@@ -106,10 +106,9 @@
         <li>
             <%if(currentUser){%>
             <a href="/wallet">My Wallet : <%=currentUser.cashback%></a>
-            <%}%>
-           <% else{%>
+            <%}else{%>
               <a href="/wallet">My Wallet : 0</a>
-           <% }%>
+          <%}%>
         </li>
         <li>
             <a href="/user/cart">Cart</a>
