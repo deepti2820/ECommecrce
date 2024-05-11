@@ -2,7 +2,6 @@ const express=require("express");
 const app=express();
 const path=require("path");
 const ejsMate=require("ejs-mate");
-const dataDB=require("./data");
 const mongoose = require('mongoose');
 const methodOverride=require("method-override");
 const session = require('express-session');
