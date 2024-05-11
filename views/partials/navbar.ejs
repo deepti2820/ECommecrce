@@ -104,7 +104,12 @@
             <a href="">Profle</a>
         </li>
         <li>
+            <%if(currentUser){%>
             <a href="/wallet">My Wallet : <%=currentUser.cashback%></a>
+            <%}%>
+            else{
+              <a href="/wallet">My Wallet : 0</a>
+            }
         </li>
         <li>
             <a href="/user/cart">Cart</a>
