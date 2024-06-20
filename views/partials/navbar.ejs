@@ -40,8 +40,7 @@
 
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #D0A2F7;">
-  <img src="" alt="Hamburger Icon" class="hamburger-icon" id="hamburgerIcon">
-  <a class="navbar-brand" href="/products">Kharid Lo</a> 
+  <a class="navbar-brand" href="/products">PrimeMart</a> 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
@@ -94,41 +93,4 @@
 
 
 
-   <!-- Side menu content -->
-   <div class="side-menu" id="sideMenu">
-    <ul>
-        <li>
-            <a href="/products">Home</a>
-        </li>
-        <li>
-            <a href="">Profle</a>
-        </li>
-        <li>
-            <%if(currentUser){%>
-            <a href="/wallet">My Wallet : <%=currentUser.cashback%></a>
-            <%}else{%>
-              <a href="/wallet">My Wallet : 0</a>
-          <%}%>
-        </li>
-        <li>
-            <a href="/user/cart">Cart</a>
-        </li>
-        <li>
-            <a href="/myOrder">Order History</a>
-        </li>
-    </ul>
-    
-</div>
-
-<script>
-    // JavaScript to toggle side menu visibility
-    document.getElementById('hamburgerIcon').addEventListener('click', function() {
-        var sideMenu = document.getElementById('sideMenu');
-        if (sideMenu.style.left === '-250px') {
-            sideMenu.style.left = '0'; // Show the side menu
-        } else {
-            sideMenu.style.left = '-250px'; // Hide the side menu
-        }
-    });
-</script>
-
+ 
